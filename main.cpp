@@ -1,9 +1,12 @@
 #include <iostream>
 #include "load.h"
-//master branch
+//linux branch
 
 int main() 
 {
+	#ifndef_WIN32
+		return -1;
+	#endif
 	int menu = 0;
 	std::cout<<"Menu"<<std::endl;
 	while(menu != 3)
